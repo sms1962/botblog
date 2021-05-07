@@ -1,5 +1,5 @@
 ---
-title: "Bot blog"
+title: "Botblog"
 site: distill::distill_website
 listing: posts
 ---
