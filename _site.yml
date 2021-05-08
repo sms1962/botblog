@@ -18,4 +18,7 @@ navbar:
     - icon: fab fa-github
       href: https://github.com/sms1962/botkrakow
 google_analytics: "G-0ZSKMDHRDJ"
+collections:
+  posts:
+    share: [twitter, linkedin, pinterest, facebook]
 output: distill::distill_article
