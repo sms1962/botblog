@@ -21,5 +21,6 @@ google_analytics: "G-0ZSKMDHRDJ"
 collections:
   posts:
     disqus: botblog
-    share: [twitter, linkedin, pinterest, facebook]
+    share: [twitter, linkedin, facebook]
+
 output: distill::distill_article
