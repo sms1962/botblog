@@ -17,5 +17,5 @@ navbar:
       href: about.html
     - icon: fab fa-github
       href: https://github.com/sms1962/botkrakow
-google_analytics: "G-0ZSKMDHRDJ""
+google_analytics: "G-0ZSKMDHRDJ"
 output: distill::distill_article
