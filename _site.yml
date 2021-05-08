@@ -20,5 +20,8 @@ navbar:
 google_analytics: "G-0ZSKMDHRDJ"
 collections:
   posts:
+    disqus:
+      shortname: botblog
+      hidden: true
     share: [twitter, linkedin, pinterest, facebook]
 output: distill::distill_article
