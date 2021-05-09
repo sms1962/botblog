@@ -6,6 +6,9 @@ description: |
 base_url: https://botblog.netlify.app
 output_dir: "_site"
 navbar:
+  left:
+    - icon: fa fa-rss
+      href: index.xml
   right:
     - text: "Mapy botow"
       menu:
