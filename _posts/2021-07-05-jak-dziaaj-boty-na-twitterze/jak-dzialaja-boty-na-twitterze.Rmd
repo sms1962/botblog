@@ -75,7 +75,7 @@ Zacznijmy od schematu działania botów publikujących zdjęcia satelitarne miej
 
 ![](images/algorytm_bota.jpeg "Schemat działania bota")
 
-## Autoryzacja Twittera
+### Autoryzacja Twittera
 
 Zgodnie z naszym schematem zaczynamy od autoryzacji konta bota na Twitterze. Najpierw jednak musimy konto bota założyć. Odradzam uruchamianie bota na swoim "prywatnym" koncie, bo coś nie "pyknie", Twitter nam zablokuje i będzie problem. Nie znaczy to, że nie możemy uruchamiać botów na "swoim" koncie. Można, ale przynajmniej pierwsze próby lepiej zrobić na zupełnie nowym. To przecież nic nie kosztuje.
 
