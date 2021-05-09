@@ -36,7 +36,7 @@ dt <- twity %>%
 ```
 
 
-```{r echo=FALSE, preview = TRUE, layout="l-screen-inset"}
+```{r echo=FALSE, preview = TRUE, layout="l-screen-inset shaded", fig.height=6}
 m <- leaflet() %>%
   addProviderTiles(providers$Stamen.TonerLite) %>% 
   # addTiles() %>%  # Add default OpenStreetMap map tiles
