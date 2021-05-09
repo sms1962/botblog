@@ -11,6 +11,8 @@ date: 05-07-2021
 output:
   distill::distill_article:
     self_contained: false
+    toc: true
+
 repository_url: https://github.com/sms1962/BotKrakow
 creative_commons: CC BY
 twitter:
