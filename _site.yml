@@ -17,7 +17,7 @@ navbar:
       href: about.html
     - icon: fab fa-github
       href: https://github.com/sms1962/botkrakow
-google_analytics: "G-0ZSKMDHRDJ"
+google_analytics: "UA-196547751-1"
 collections:
   posts:
     disqus: botblog
