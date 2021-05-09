@@ -1,0 +1,51 @@
+---
+title: "Mapa punktów w Krakowie"
+description: |
+  Mapa zawierająca opublikowane przez bota [botkrakow](https://twitter.com/botkrakow), punkty w Krakowie
+
+base_url: https://botblog.netlify.app
+creative_commons: CC BY
+preview: images/map_botkrakow.png
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(leaflet)
+library(tidyverse)
+```
+
+
+```{r echo=FALSE}
+# twity <- get_timeline("botkrakow", n=1000)
+twity <- read_csv("https://raw.githubusercontent.com/sms1962/BotKrakow/master/data/archiwum_twitow.csv", 
+                   col_types = cols(user_id = col_character(), 
+                                    status_id = col_character(), created_at = col_character(),
+                                    favorite_count = col_character(), retweet_count = col_character(),
+                                    followers_count = col_character(), statuses_count = col_character(),
+                                    ext_media_url = col_character()))
+```
+
+```{r echo=FALSE}
+dt <- twity %>% 
+  select(status_id, created_at, text, ext_media_url) %>% 
+  mutate(lat_lon = str_extract(text, "[:digit:]+\\.[:digit:]+,.?[:digit:]+\\.[:digit:]+")) %>% 
+  separate(lat_lon, into=c("lat","lon"),sep = ",") %>% 
+  mutate(lat = as.numeric(lat), lon = as.numeric(lon)) %>% 
+  mutate(t_url = paste0("https://twitter.com/BotKrakow/status/", status_id))
+```
+
+
+```{r echo=FALSE, preview = TRUE, layout="l-screen-inset"}
+m <- leaflet() %>%
+  addProviderTiles(providers$Stamen.TonerLite) %>% 
+  # addTiles() %>%  # Add default OpenStreetMap map tiles
+  addCircleMarkers(dt$lon, dt$lat, clusterOptions = markerClusterOptions(), 
+                   popup = paste0("<img src = ", dt$ext_media_url, " width='200' height='150' />"))
+m 
+
+
+mapview::mapshot(m, file = "images/map_botkrakow.png", remove_controls = c("zoomControl", "layersControl", "homeButton", "scaleBar","drawToolbar", "easyButton"))
+
+
+```
