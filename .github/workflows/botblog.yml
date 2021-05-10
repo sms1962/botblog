@@ -20,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@master
+      
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Cache R packages
         uses: actions/cache@v1
@@ -30,7 +31,7 @@ jobs:
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Install distill package
-        run: Rscript -e 'install.packages("distil", dependencies = TRUE)'
+        run: Rscript -e 'install.packages("distill", dependencies = TRUE)'
       - name: Install rmarkdown package
         run: Rscript -e 'install.packages("rmarkdown", dependencies = TRUE)'
       - name: Install tidyverse package
