@@ -1,8 +1,8 @@
 ---
 title: "Mapa punktów w Krakowie"
 description: |
-  Mapa zawierająca opublikowane przez bota [botkrakow](https://twitter.com/botkrakow), punkty w Krakowie\n
-  Ostatnia aktualizacja: `r Sys.time()`
+  Mapa zawierająca opublikowane przez bota [botkrakow](https://twitter.com/botkrakow), punkty w Krakowie. 
+  Ostatnia aktualizacja: `r as.POSIXct(Sys.time(), tz = "Europe/Warsaw")`
 base_url: https://botblog.netlify.app
 creative_commons: CC BY
 preview: images/map_botkrakow.png
