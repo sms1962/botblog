@@ -13,7 +13,7 @@ navbar:
     - text: "Mapy botow"
       menu:
         - text: "botkrakow"
-          href: mapa_punktow_botkrakow
+          href: mapa_punktow_botkrakow.html
         - text: "warszawabot"
           href: https://warszawabot.netlify.app
     - text: "About"
