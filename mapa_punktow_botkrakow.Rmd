@@ -19,7 +19,7 @@ library(mapview)
 
 ```{r echo=FALSE}
 # twity <- get_timeline("botkrakow", n=1000)
-twity <- read_csv("data/archiwum_twitow.csv", 
+twity <- read_csv("./data/archiwum_twitow.csv", 
                    col_types = cols(user_id = col_character(), 
                                     status_id = col_character(), created_at = col_character(),
                                     favorite_count = col_character(), retweet_count = col_character(),
