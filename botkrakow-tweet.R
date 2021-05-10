@@ -1,4 +1,4 @@
-# Twitter token 
+# Losowanie punktu i twit botkrakow
 library(rtweet)
 
 botkrakow_token <- rtweet::create_token(
