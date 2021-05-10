@@ -29,6 +29,8 @@ jobs:
           restore-keys: r-1-
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
+      - name: Install distill package
+        run: Rscript -e 'install.packages("distil", dependencies = TRUE)'
       - name: Install rmarkdown package
         run: Rscript -e 'install.packages("rmarkdown", dependencies = TRUE)'
       - name: Install tidyverse package
