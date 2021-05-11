@@ -26,7 +26,7 @@ lat <- round(runif(1, 50.040, 50.093), 3)
 img_url <- paste0(
   "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/",
   paste0("pin-l-marker+015(",lon,",",lat,")/", lon, ",", lat),
-  ",15,0/850x500?access_token=",
+  ",15,0/850x500@2x?access_token=",
   Sys.getenv("MAPBOX_PUBLIC_ACCESS_TOKEN")
 )
 
