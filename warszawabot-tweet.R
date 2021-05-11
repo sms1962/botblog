@@ -9,10 +9,10 @@ library(rmarkdown)
 # Twitter token 
 warszawabot_token <- rtweet::create_token(
   app = "warszawabot",
-  consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
-  consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
-  access_token =    Sys.getenv("TWITTER_ACCESS_TOKEN"),
-  access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET"),
+  consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY_WARSZAWABOT"),
+  consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET_WARSZAWABOT"),
+  access_token =    Sys.getenv("TWITTER_ACCESS_TOKEN_WARSZAWABOT"),
+  access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET_WARSZAWABOT"),
   set_renv = FALSE
 )
 

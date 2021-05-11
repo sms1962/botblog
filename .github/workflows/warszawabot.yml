@@ -12,10 +12,10 @@ jobs:
   warszawabot-post:
     runs-on: macOS-latest
     env:
-      TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-      TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-      TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-      TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+      TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY_WARSZAWABOT }}
+      TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET_WARSZAWABOT }}
+      TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN_WARSZAWABOT }}
+      TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET_WARSZAWABOT }}
       MAPBOX_PUBLIC_ACCESS_TOKEN: ${{ secrets.MAPBOX_PUBLIC_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v2
@@ -27,7 +27,7 @@ jobs:
         with:
           path: ${{ env.R_LIBS_USER }}
           key: r-1-${{ hashFiles('DESCRIPTION') }}
-          restore-keys: r-1-
+          restore-keys: r-2-
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Install distill package
@@ -43,7 +43,7 @@ jobs:
       - name: Install mapview package
         run: Rscript -e 'install.packages("mapview", dependencies = TRUE)'
       - name: Create and post tweet
-        run: Rscript botkrakow-tweet.R
+        run: Rscript warszawabot-tweet.R
       - name: Commit plików
         run: |
           git add -A
