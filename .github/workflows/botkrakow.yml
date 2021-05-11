@@ -47,5 +47,5 @@ jobs:
       - name: Commit plików
         run: |
           git add -A
-          git commit -m 'Zapisanie nowych twitow' || echo "Zapisanie nowych twitow"
+          git commit -m 'Zapisanie nowych twitow botkrakow'
           git push origin || echo "Zapisuje nowe twity"
