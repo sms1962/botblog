@@ -45,6 +45,8 @@ latlon_details <- paste0("Jestem botem, który co 1 h wybiera losowo punkt w #Wa
                          "https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"
 )
 
+print("Teraz twit")
+
 # Wysłanie twita ze zdjęciem satelitarnym
 rtweet::post_tweet(
   status = latlon_details,
