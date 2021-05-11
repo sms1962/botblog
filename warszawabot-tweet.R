@@ -53,7 +53,7 @@ rtweet::post_tweet(
 )
 
 # pobranie ostatnich twitow (max 100)
-df <- get_timeline(user = "warszawabot", n=500, token = botkrakow_token)
+df <- get_timeline(user = "warszawabot", n=500, token = warszawabot_token)
 
 df_dzisiejsze <- df %>% 
   unnest(ext_media_url) %>% 
