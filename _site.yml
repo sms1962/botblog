@@ -15,11 +15,11 @@ navbar:
         - text: "Kraków - mapa punktów"
           href: mapa_punktow_botkrakow.html
         - text: "Warszawa - mapa punktów"
-          href: https://warszawabot.netlify.app
+          href: mapa_punktow_warszawabot.html
     - text: "About"
       href: about.html
     - icon: fab fa-github
-      href: https://github.com/sms1962/botkrakow
+      href: https://github.com/sms1962/botblog
 google_analytics: "UA-196547751-1"
 collections:
   posts:
