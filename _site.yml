@@ -15,7 +15,7 @@ navbar:
         - text: "Kraków - mapa punktów"
           href: mapa_punktow_botkrakow.html
         - text: "Warszawa - mapa punktów"
-          href: mapa_punktow_warszawabot.html
+          href: https://warszawabot.netlify.app
     - text: "About"
       href: about.html
     - icon: fab fa-github
