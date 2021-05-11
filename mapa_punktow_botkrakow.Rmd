@@ -2,10 +2,10 @@
 title: "Mapa punktów w Krakowie"
 description: |
   Mapa zawierająca opublikowane przez bota [botkrakow](https://twitter.com/botkrakow), punkty w Krakowie. 
-  Ostatnia aktualizacja: `r as.POSIXct(Sys.time(), tz = "Europe/Warsaw")`
+  Ostatnia aktualizacja: `r lubridate::with_tz(Sys.time(),tzone = "Europe/Warsaw")`
 base_url: https://botblog.netlify.app
 creative_commons: CC BY
-preview: images/map_botkrakow.png
+preview: images/mapa_botkrakow.png
 output: distill::distill_article
 ---
 
@@ -20,7 +20,7 @@ library(distill)
 
 ```{r echo=FALSE}
 # twity <- get_timeline("botkrakow", n=1000)
-twity <- read_csv("./data/archiwum_twitow.csv", 
+twity <- read_csv("./data/botkrakow_archiwum_twitow.csv", 
                    col_types = cols(user_id = col_character(), 
                                     status_id = col_character(), created_at = col_character(),
                                     favorite_count = col_character(), retweet_count = col_character(),
@@ -48,7 +48,7 @@ m <- leaflet() %>%
 m 
 
 
-mapview::mapshot(m, file = "images/map_botkrakow.png", remove_controls = c("zoomControl", "layersControl", "homeButton", "scaleBar","drawToolbar", "easyButton"))
+mapview::mapshot(m, file = "images/mapa_botkrakow.png", remove_controls = c("zoomControl", "layersControl", "homeButton", "scaleBar","drawToolbar", "easyButton"))
 
 
 ```

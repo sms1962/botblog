@@ -44,10 +44,6 @@ jobs:
         run: Rscript -e 'install.packages("mapview", dependencies = TRUE)'
       - name: Create and post tweet
         run: Rscript botkrakow-tweet.R
-      - name: archiwum twitow
-        run: Rscript archiwum_twitow.R
-      - name: mapa punktow na mapie
-        run: Rscript render_punktow_na_mapie.R
       - name: Commit plików
         run: |
           git add -A

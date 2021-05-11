@@ -10,11 +10,11 @@ navbar:
     - icon: fa fa-rss
       href: index.xml
   right:
-    - text: "Mapy botow"
+    - text: "Mapy punktów"
       menu:
-        - text: "botkrakow"
+        - text: "Kraków - mapa punktów"
           href: mapa_punktow_botkrakow.html
-        - text: "warszawabot"
+        - text: "Warszawa - mapa punktów"
           href: https://warszawabot.netlify.app
     - text: "About"
       href: about.html
