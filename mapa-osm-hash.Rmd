@@ -1,0 +1,23 @@
+---
+title: "Mapa OSM hash"
+author: "SMS"
+date: "5/15/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+library(leaflet.extras)
+library(tidyverse)
+```
+
+## Demo mapy z hashem
+
+```{r}
+leaflet() %>% 
+  addTiles() %>% 
+  addHash()
+```
+
+
