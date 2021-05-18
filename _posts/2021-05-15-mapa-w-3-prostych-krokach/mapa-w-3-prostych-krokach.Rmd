@@ -322,7 +322,7 @@ m <- leaflet(height = 250, width = 600) %>%
   addProviderTiles(provider = providers$Stamen.TonerLines) %>% 
   addProviderTiles(provider = providers$Stamen.TonerLabels)
 
-mapshot(m, file = "_site/images/zakopane_sat_600_250.jpeg")
+mapshot(m, file = "images/zakopane_sat_600_250.jpeg")
 ```
 
 ## Zapisanie mapy w pliku html
