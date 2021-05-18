@@ -8,14 +8,22 @@
 [warszawabot](https://twitter.com/warszawabot)
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Mapa w 3 prostych krokach</title>
+      <dc:creator>Stanisław M. Stanuch</dc:creator>
+      <link>https://botblog.netlify.app/posts/2021-05-15-mapa-w-3-prostych-krokach</link>
+      <description>Pokażę Wam, że stworzenie mapy z różnymi podkładami to 3 proste kroki, a zapisanie jej w pliku html albo pliku graficznym to dwa dodatkowe. Chociaż jest to w języku R, to przy odrobinie brawury, zrobić mapę może każdy.</description>
+      <guid>https://botblog.netlify.app/posts/2021-05-15-mapa-w-3-prostych-krokach</guid>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Jak działają boty na Twitterze?</title>
       <dc:creator>Stanisław M. Stanuch</dc:creator>
       <link>https://botblog.netlify.app/posts/2021-07-05-jak-dziaaj-boty-na-twitterze</link>
       <description>Boty nie mają dobrej prasy. Sporo osób kojarzy je z botami, które źli ludzie używają do dezinformacji czy spamowania. Tymczasem mają one, jak młotek, dwie strony: dobrą i złą. Pokażę Wam tę dobrą i opowiem jak działają boty na Twitterze na przykładzie dwóch, które ostatnio zrobiłem.</description>
       <guid>https://botblog.netlify.app/posts/2021-07-05-jak-dziaaj-boty-na-twitterze</guid>
-      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
       <media:content url="https://botblog.netlify.app/posts/2021-07-05-jak-dziaaj-boty-na-twitterze/images/algorytm_bota.jpeg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
