@@ -3,7 +3,7 @@ title: "Mapa w 3 prostych krokach"
 description: |
   Pokażę Wam, że stworzenie mapy z różnymi podkładami to 3 proste kroki, a zapisanie jej w pliku html albo pliku graficznym to dwa dodatkowe. Chociaż jest to w języku R, to przy odrobinie brawury, zrobić mapę może każdy. 
 base_url: https://botblog.netlify.app
-preview: images/zakopane_sat_600_250.png
+preview: images/zakopane_sat_600_250.jpeg
 author:
   - name: Stanisław M. Stanuch
     url: https://dziennikarz.pl
@@ -322,7 +322,7 @@ m <- leaflet(height = 250, width = 600) %>%
   addProviderTiles(provider = providers$Stamen.TonerLines) %>% 
   addProviderTiles(provider = providers$Stamen.TonerLabels)
 
-mapshot(m, file = "images/zakopane_sat_600_250.png")
+mapshot(m, file = "images/zakopane_sat_600_250.jpeg")
 ```
 
 ## Zapisanie mapy w pliku html
