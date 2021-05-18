@@ -339,7 +339,7 @@ m <- leaflet(height = 250, width = 600) %>%
 mapshot(m, url = "zakopane_sat.html")
 ```
 
-```{r echo=FALSE, fig.cap="Zakopane, mapa o rozmiarach 600x250"}
+```{r echo=FALSE, fig.cap="Zakopane, mapa o rozmiarach 600x250", preview = TRUE}
 
 leaflet(height = 250, width = 600) %>%
   setView(lng = lng, lat = lat, zoom = 17) %>% 
