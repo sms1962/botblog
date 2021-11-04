@@ -6,7 +6,7 @@ on:
       - master
       - main
   schedule:
-    - cron: '30 8 * * *'
+    - cron: '15 8 * * *'
 
 jobs:
   warszawabot-post:
