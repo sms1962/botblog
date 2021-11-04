@@ -124,9 +124,9 @@ Najłatwiej będzie zacząć od stworzenia konta na [RStudio Cloud](https://rstu
 
 No więc po kolei:
 
-1.  Wejdź na stronę [\<https://rstudio.cloud\>](https://rstudio.cloud) i załóż darmowe konto.
+1.  Wejdź na stronę [\<https://rstudio.cloud>](https://rstudio.cloud) i załóż darmowe konto.
 2.  Po założeniu konta kliknij stwórz nowy projekt ("New Project")
-3.  W nowym projekcie kliknij na File-\> New File -\> R Script
+3.  W nowym projekcie kliknij na File-> New File -> R Script
 
 W punkcie trzecim stworzyliśmy nowy dokument do pisania programów (skryptów) w języku R i w nim stworzymy naszą pierwszą mapę.
 
@@ -180,14 +180,14 @@ Wszystkie wiersze rozpoczynające się od znaku \# to komentarz. Warto go stosow
 
 1.  Pierwsze dwie linijki to wczytanie potrzebnych nam bibliotek (leaflet - do tworzenia map, tidyverse - do różnych funkcji, o których teraz nie ma sensu pisać. Uwierz, że jest potrzebna :-) i mapview z której skorzystamy przy zapisie mapy do pliku html albo pliku graficznego)
 2.  kolejne dwie linijki to współrzędne geograficzne punktu, który będzie w środku mapy. W tym wypadku są to współrzędne oczka wodnego na Krupówkach w Zakopanem. Współrzędne dowolnego punktu na Ziemi możesz znaleźć w OpenStreetMap i Google Maps. Klikasz w wybrany punkt, naciskasz prawy klawisz myszki i z menu wybierasz odpowiednią pozycję, a następnie kopiujesz współrzędne do Schowka.
-3.  Kolejna linijka, to miejsce gdzie zaczyna się właściwa zabawa. *leaflet()* to funkcja, która rysuje "ramkę" mapy oraz dodaje przycisk do powiększania/pomniejszania wyświetlanego obszaru. Specjalną funkcję pełni tu ciąg znaków "*%\>%*", to tzw. pipe czyli operator, który powoduje, że wynik operacji po lewej stronie, zostaje przekazany do funkcji po prawej stronie. Wiem, wiem, trudne, ale przyjmij, że tak ma być :-)
+3.  Kolejna linijka, to miejsce gdzie zaczyna się właściwa zabawa. *leaflet()* to funkcja, która rysuje "ramkę" mapy oraz dodaje przycisk do powiększania/pomniejszania wyświetlanego obszaru. Specjalną funkcję pełni tu ciąg znaków "*%>%*", to tzw. pipe czyli operator, który powoduje, że wynik operacji po lewej stronie, zostaje przekazany do funkcji po prawej stronie. Wiem, wiem, trudne, ale przyjmij, że tak ma być :-)
 4.  Kolejna linijka "ustawia" środek mapy w punkcie o zdefiniowanych wcześniej współrzędnych. Dodatkowo jednym z jej parametrów (obowiązkowym) jest tzw. "zoom" czyli poziom powiększenia.
 5.  Ostatnia linijka pobiera i wyświetla z serwerów OpenStreetMap fragment mapy dla wybranego wcześniej obszaru.
 
 Mamy kod i pewnie chciałbyś zobaczyć mapę, którą wyświetla. W tym celu musimy uruchomić napisany kod. Można to zrobić na kilka sposobów, ale ponieważ na razie mamy jedną mapę do wyświetlenia, to skorzystamy z najprostszego czyli uruchomienia całego kodu, jaki jest w dokumencie.
 
 1.  Umieść kursor w dokumencie z kodem
-2.  Naciśnij kombinację klawiszy \<Shift\>\<Control\>\<Enter\>
+2.  Naciśnij kombinację klawiszy \<Shift>\<Control>\<Enter>
 
 Jeśli nie popełniłeś wcześniej błędu w kodzie, to po mrugnięciu okiem :-), w Viewerze (prawe-dolne okienko) zobaczysz mapę centrum Zakopanego.
 
@@ -197,7 +197,7 @@ Teraz poeksperymentuj z kodem np. zmieniając zoom albo, dlaczego by nie, wspó�
 
 Nasza pierwsza mapa miała standardowy podkład OpenStreetMap, ale pisałem wcześniej, że jedną z zalet samodzielnego tworzenia map np. w języku R jest możliwość wyboru podkładu, a nawet ich mieszania ze sobą.
 
-Na samym końcu dokumentu skryptu dodaj poniższy kod. UWAGA: tym razem spróbuj go przepisać. Ostatecznie mój komentarz (to co jest po znaku \#), możesz pominąć :-)
+Na samym końcu dokumentu skryptu dodaj poniższy kod. UWAGA: tym razem spróbuj go przepisać. Ostatecznie mój komentarz (to co jest po znaku #), możesz pominąć :-)
 
 ```{r echo=TRUE, fig.cap="Rysowanie mapy, podkład OpenStreetMap. Oczko wodne na Krupówkach w Zakopanem"}
 
@@ -224,7 +224,7 @@ leaflet() %>%
 Aby uruchomić kod, zastosujemy teraz inny sposób, bo nie musimy uruchamiać kodu od początku, tylko od miejsca gdzie wpisałeś nowy.
 
 1.  Zaznacz nowo wpisany kod
-2.  Naciśnij kombinację klawiszy \<CTRL\>\<Enter\> albo kliknij w przycisk "Run"
+2.  Naciśnij kombinację klawiszy \<CTRL>\<Enter> albo kliknij w przycisk "Run"
 3.  Po chwili w prawym dolnym okienku (Viewerze) zobaczysz mapę.
 
 Jak widzisz powyżej, ta mapa wyraźnie różni się od poprzedniej. Pomijając już brak kolorów, to nie ma w niej zupełnie oznaczeń nazw ulic. Można to łatwo dodać i tu przechodzimy do
@@ -259,7 +259,7 @@ leaflet() %>%
 
 1.  Dodaj kod na końcu dokumentu, który już mamy
 2.  Zaznacz nowo dodany kod
-3.  Naciśnij \<CTRL\>\<Enter\>
+3.  Naciśnij \<CTRL>\<Enter>
 
 Zauważ, że nowy kod od poprzedniego różni się... jedną dodaną linijką z funkcją dodania nowej warstwy (podkładu), który zawiera tylko etykiety. Ta technika sprawdzi się, gdy dodajemy podkład transparentny, jak w przykładzie z etykietami. Technikę tą można wykorzystywać do osiągania ciekawych efektów np. dodania do zdjęcia satelitarnego linii i nazw ulic.
 
@@ -293,7 +293,7 @@ leaflet() %>%
 
 ## Zapisanie mapy w pliku graficznym png/jpeg
 
-Do zapisania mapy stworzonej przez bibliotekę *leaflet* wykorzystamy funkcję *mapshot* z biblioteki *mapview*. Przepisz kod poniżej w swoim dokumencie, a następnie zaznacz go i uruchom (\<CTRL\>\<Enter\>)
+Do zapisania mapy stworzonej przez bibliotekę *leaflet* wykorzystamy funkcję *mapshot* z biblioteki *mapview*. Przepisz kod poniżej w swoim dokumencie, a następnie zaznacz go i uruchom (\<CTRL>\<Enter>)
 
 ```{r echo=TRUE, eval=FALSE}
 
